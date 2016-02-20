@@ -13,7 +13,7 @@ It also produces a quote that contains the most frequent word mapped or one of i
 ### How To Run:
 Since the markov chain and the rel_words dictionary is already made all we need to do to compose our tweets is
 	
-	python scrape_article.py
+	bash run.bash
 
 It will loop through each article currently on the bbc.com/news top stories portion. It will produce a tweet and then sleep with a random generated delay.
 ### Scripts:
@@ -34,7 +34,8 @@ It will loop through each article currently on the bbc.com/news top stories port
 - image.py
   - Using the frequency list returned by words.py it creates a image with splatters.
 - tweet.py
-  - This is called by scrape_articles.py and tweets the title, url, qoute, and picture representing the article.		
+  - This is called by scrape_articles.py and tweets the title, url, qoute, and picture representing the article.		- sentiment.py
+  - Analyses the overall sentiment (negative,neutral,positive) of the article and choses background color accordingly (black,gray-scale,white).
 - save_load_obj.py
   - Contains functions to save and load objects.
 - run.bash
@@ -51,3 +52,8 @@ It will loop through each article currently on the bbc.com/news top stories port
 - tinyurl
 - tweepy
 - alchemy
+
+### APIs
+- Twitter
+- Wordnik
+- Alchemyapi
