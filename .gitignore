@@ -61,3 +61,8 @@ target/
 
 #Ipython Notebook
 .ipynb_checkpoints
+
+#Text fike
+*.txt
+/txt
+/img/tweet.png
