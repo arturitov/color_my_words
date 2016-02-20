@@ -1,0 +1,108 @@
+
+
+Top news article links found:
+/news/world-asia-35620649
+/sport/cricket/35620560
+/news/world-africa-35620648
+/news/world-asia-india-35620647
+/news/world-europe-35618389
+/news/world-asia-china-35618395
+/news/world-us-canada-35617935
+/news/world-europe-35620368
+/news/world-europe-35616269
+/news/world-us-canada-35616011
+/news/35618018
+
+{u'http://www.bbc.com/news/technology-35611763': True, u'http://www.bbc.com/news/35618018': True, u'http://www.bbc.com/news/world-us-canada-35618386': True, u'http://www.bbc.com/news/world-europe-35620368': True, u'http://www.bbc.com/news/world-us-canada-35616011': True, u'http://www.bbc.com/news/world-europe-35617147': True, u'http://www.bbc.com/news/world-africa-35615720': True, u'http://www.bbc.com/news/world-us-canada-35610523': True, u'http://www.bbc.com/news/uk-england-cambridgeshire-35598578': True, u'http://www.bbc.com/news/uk-politics-eu-referendum-35609968': True, u'http://www.bbc.com/news/world-europe-35616834': True, u'http://www.bbc.com/news/technology-35611756': True, u'http://www.bbc.com/news/world-asia-china-35618395': True, u'http://www.bbc.com/news/world-us-canada-35617935': True, u'http://www.bbc.com/news/election-us-2016-35615331': True, u'http://www.bbc.com/news/world-europe-35611906': True, u'http://www.bbc.com/news/world-africa-35610917': True, u'http://www.bbc.com/news/world-us-canada-35617262': True, u'http://www.bbc.com/news/world-europe-35618389': True, u'http://www.bbc.com/news/world-middle-east-35616267': True, u'http://www.bbc.com/news/world-europe-35616269': True, u'http://www.bbc.com/sport/cricket/35613141': True, u'http://www.bbc.com/news/world-africa-35613085': True, u'http://www.bbc.com/news/world-asia-35610809': True}
+---------------------------------------------------
+http://tinyurl.com/hb3aqvj
+http://www.bbc.com/news/world-asia-35620649
+
+Powerful storm hits Fiji's main island 
+
+Getting qoute...
+Frequency Dic:
+{'content': {'rw': ['extent'], 'weight': 2}, 'concerned': {'rw': ['affected'], 'weight': 2}, 'hurt': {'rw': ['damage'], 'weight': 2}, 'grief': {'rw': ['grievous'], 'weight': 2}, 'sad': {'rw': ['grievous'], 'weight': 2}, 'excited': {'rw': ['move'], 'weight': 2}}
+
+Emotion List:
+['content', 'concerned', 'hurt', 'grief', 'sad', 'excited']
+
+“To avoid drama and the extent of my lusts!”
+
+Finding Image...
+
+Sentiment negative -0.0633262
+187
+Tweeting...
+
+Success!!!!
+---------------------------------------------------
+Delay 1424 seconds
+{u'http://www.bbc.com/news/technology-35611763': True, u'http://www.bbc.com/sport/cricket/35613141': True, u'http://www.bbc.com/news/35618018': True, u'http://www.bbc.com/news/world-us-canada-35618386': True, u'http://www.bbc.com/news/world-europe-35620368': True, u'http://www.bbc.com/news/world-europe-35616834': True, u'http://www.bbc.com/news/world-asia-35620649': True, u'http://www.bbc.com/news/world-europe-35617147': True, u'http://www.bbc.com/news/world-africa-35615720': True, u'http://www.bbc.com/news/world-us-canada-35610523': True, u'http://www.bbc.com/news/uk-england-cambridgeshire-35598578': True, u'http://www.bbc.com/news/uk-politics-eu-referendum-35609968': True, u'http://www.bbc.com/news/technology-35611756': True, u'http://www.bbc.com/news/world-asia-china-35618395': True, u'http://www.bbc.com/news/world-us-canada-35617935': True, u'http://www.bbc.com/news/election-us-2016-35615331': True, u'http://www.bbc.com/news/world-europe-35611906': True, u'http://www.bbc.com/news/world-africa-35610917': True, u'http://www.bbc.com/news/world-us-canada-35617262': True, u'http://www.bbc.com/news/world-europe-35618389': True, u'http://www.bbc.com/news/world-middle-east-35616267': True, u'http://www.bbc.com/news/world-europe-35616269': True, u'http://www.bbc.com/news/world-us-canada-35616011': True, u'http://www.bbc.com/news/world-africa-35613085': True, u'http://www.bbc.com/news/world-asia-35610809': True}
+---------------------------------------------------
+http://tinyurl.com/gqzxl6u
+http://www.bbc.com/sport/cricket/35620560
+
+McCullum scores fastest Test century 
+
+Getting qoute...
+Frequency Dic:
+{'upset': {'rw': ['turned'], 'weight': 2}}
+
+Emotion List:
+['upset']
+
+Not enough emotions were mapped.
+Skipping article!!!!
+
+---------------------------------------------------
+{u'http://www.bbc.com/news/technology-35611763': True, u'http://www.bbc.com/news/35618018': True, u'http://www.bbc.com/news/world-us-canada-35618386': True, u'http://www.bbc.com/news/world-europe-35620368': True, u'http://www.bbc.com/news/world-europe-35616834': True, u'http://www.bbc.com/news/world-asia-35620649': True, u'http://www.bbc.com/news/world-europe-35617147': True, u'http://www.bbc.com/news/world-africa-35615720': True, u'http://www.bbc.com/news/world-us-canada-35610523': True, u'http://www.bbc.com/news/uk-england-cambridgeshire-35598578': True, u'http://www.bbc.com/news/uk-politics-eu-referendum-35609968': True, u'http://www.bbc.com/news/world-us-canada-35616011': True, u'http://www.bbc.com/news/technology-35611756': True, u'http://www.bbc.com/news/world-asia-china-35618395': True, u'http://www.bbc.com/news/world-us-canada-35617935': True, u'http://www.bbc.com/news/election-us-2016-35615331': True, u'http://www.bbc.com/news/world-europe-35611906': True, u'http://www.bbc.com/news/world-africa-35610917': True, u'http://www.bbc.com/news/world-us-canada-35617262': True, u'http://www.bbc.com/sport/cricket/35620560': True, u'http://www.bbc.com/news/world-europe-35618389': True, u'http://www.bbc.com/news/world-middle-east-35616267': True, u'http://www.bbc.com/news/world-europe-35616269': True, u'http://www.bbc.com/sport/cricket/35613141': True, u'http://www.bbc.com/news/world-africa-35613085': True, u'http://www.bbc.com/news/world-asia-35610809': True}
+---------------------------------------------------
+http://tinyurl.com/hbxgqpm
+http://www.bbc.com/news/world-africa-35620648
+
+Uganda's Museveni set to extend rule 
+
+Getting qoute...
+Frequency Dic:
+{'thrilled': {'rw': ['cast'], 'weight': 2}, 'nervous': {'rw': ['strong'], 'weight': 2}}
+
+Emotion List:
+['thrilled', 'nervous']
+
+“Elegance is a strong encouragement.”
+
+Finding Image...
+
+Sentiment negative -0.149715
+175
+Tweeting...
+
+Success!!!!
+---------------------------------------------------
+Delay 1700 seconds
+{u'http://www.bbc.com/news/technology-35611763': True, u'http://www.bbc.com/sport/cricket/35613141': True, u'http://www.bbc.com/news/35618018': True, u'http://www.bbc.com/news/world-us-canada-35618386': True, u'http://www.bbc.com/news/world-europe-35620368': True, u'http://www.bbc.com/news/world-europe-35616834': True, u'http://www.bbc.com/news/world-africa-35620648': True, u'http://www.bbc.com/news/world-asia-35620649': True, u'http://www.bbc.com/news/world-europe-35617147': True, u'http://www.bbc.com/news/world-africa-35615720': True, u'http://www.bbc.com/news/world-us-canada-35610523': True, u'http://www.bbc.com/news/uk-england-cambridgeshire-35598578': True, u'http://www.bbc.com/news/uk-politics-eu-referendum-35609968': True, u'http://www.bbc.com/news/technology-35611756': True, u'http://www.bbc.com/news/world-asia-china-35618395': True, u'http://www.bbc.com/news/world-us-canada-35617935': True, u'http://www.bbc.com/news/election-us-2016-35615331': True, u'http://www.bbc.com/news/world-europe-35611906': True, u'http://www.bbc.com/news/world-africa-35610917': True, u'http://www.bbc.com/news/world-us-canada-35617262': True, u'http://www.bbc.com/sport/cricket/35620560': True, u'http://www.bbc.com/news/world-europe-35618389': True, u'http://www.bbc.com/news/world-middle-east-35616267': True, u'http://www.bbc.com/news/world-europe-35616269': True, u'http://www.bbc.com/news/world-us-canada-35616011': True, u'http://www.bbc.com/news/world-africa-35613085': True, u'http://www.bbc.com/news/world-asia-35610809': True}
+---------------------------------------------------
+http://tinyurl.com/zhd95wn
+http://www.bbc.com/news/world-asia-india-35620647
+
+Curfews as India caste violence flares 
+
+Getting qoute...
+Frequency Dic:
+{'anxious': {'rw': ['anger'], 'weight': 2}, 'frantic': {'rw': ['violent'], 'weight': 2}, 'hurt': {'rw': ['injured'], 'weight': 2}}
+
+Emotion List:
+['anxious', 'frantic', 'hurt']
+
+“Curiosity is the antithesis of anger.”
+
+Finding Image...
+
+Sentiment negative -0.337108
+148
+Tweeting...
+
+Success!!!!
+---------------------------------------------------
+Delay 1402 seconds
