@@ -34,7 +34,8 @@ It will loop through each article currently on the bbc.com/news top stories port
 - image.py
   - Using the frequency list returned by words.py it creates a image with splatters.
 - tweet.py
-  - This is called by scrape_articles.py and tweets the title, url, qoute, and picture representing the article.		- sentiment.py
+  - This is called by scrape_articles.py and tweets the title, url, qoute, and picture representing the article.	
+- sentiment.py
   - Analyses the overall sentiment (negative,neutral,positive) of the article and choses background color accordingly (black,gray-scale,white).
 - save_load_obj.py
   - Contains functions to save and load objects.
