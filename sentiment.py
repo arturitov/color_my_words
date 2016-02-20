@@ -17,13 +17,13 @@ def background_color():
 	print "Sentiment", types, score
 
 	n = 140
-	if score < -0.4:
+	if score < -0.25:
 		n = 0
-	elif score >= -0.4 and score < 0.6:
+	elif score >= -0.25 and score < 0.4:
 	
 		ratio = (score-(-0.4))/(.6+.4)
 		n = int(n * (1+ratio) )
-		if n > 230:
+		if n > 220:
 			n = 230
 	else:
 		n = 255
