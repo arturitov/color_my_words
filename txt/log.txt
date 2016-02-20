@@ -299,3 +299,72 @@ Tweeting...
 Success!!!!
 ---------------------------------------------------
 Delay 1402 seconds
+
+
+Top news article links found:
+/news/uk-politics-35621079
+/news/world-asia-35620649
+/news/world-africa-35620934
+/news/world-africa-35621426
+/news/world-us-canada-35622395
+/news/world-asia-china-35618395
+/news/world-asia-35621942
+/sport/cricket/35620560
+/news/world-asia-india-35620647
+/news/world-europe-35618389
+/newsbeat/35618067
+
+{u'http://www.bbc.com/news/technology-35611763': True, u'http://www.bbc.com/sport/cricket/35613141': True, u'http://www.bbc.com/news/35618018': True, u'http://www.bbc.com/news/world-europe-35620368': True, u'http://www.bbc.com/news/world-africa-35621426': True, u'http://www.bbc.com/news/world-europe-35616834': True, u'http://www.bbc.com/news/world-africa-35620648': True, u'http://www.bbc.com/news/world-asia-35620649': True, u'http://www.bbc.com/news/world-europe-35617147': True, u'http://www.bbc.com/news/world-africa-35615720': True, u'http://www.bbc.com/news/world-us-canada-35610523': True, u'http://www.bbc.com/news/uk-england-cambridgeshire-35598578': True, u'http://www.bbc.com/news/world-africa-35620934': True, u'http://www.bbc.com/news/uk-politics-eu-referendum-35609968': True, u'http://www.bbc.com/news/world-asia-india-35620647': True, u'http://www.bbc.com/news/technology-35611756': True, u'http://www.bbc.com/news/world-asia-china-35618395': True, u'http://www.bbc.com/news/world-us-canada-35617935': True, u'http://www.bbc.com/news/election-us-2016-35615331': True, u'http://www.bbc.com/news/world-europe-35611906': True, u'http://www.bbc.com/news/world-us-canada-35618386': True, u'http://www.bbc.com/news/uk-politics-35621079': True, u'http://www.bbc.com/news/world-us-canada-35617262': True, u'http://www.bbc.com/sport/cricket/35620560': True, u'http://www.bbc.com/news/world-europe-35618389': True, u'http://www.bbc.com/news/world-middle-east-35616267': True, u'http://www.bbc.com/news/world-europe-35616269': True, u'http://www.bbc.com/news/world-us-canada-35616011': True, u'http://www.bbc.com/news/world-africa-35610917': True, u'http://www.bbc.com/news/world-africa-35613085': True, u'http://www.bbc.com/news/world-asia-35610809': True}
+---------------------------------------------------
+http://tinyurl.com/jjycak4
+http://www.bbc.com/news/world-us-canada-35622395
+
+Funeral Mass for US Justice Scalia 
+
+Getting qoute...
+Frequency Dic:
+{'worried': {'rw': ['trouble'], 'weight': 2}}
+
+Emotion List:
+['worried']
+
+Not enough emotions were mapped.
+Skipping article!!!!
+
+---------------------------------------------------
+{u'http://www.bbc.com/news/technology-35611763': True, u'http://www.bbc.com/news/35618018': True, u'http://www.bbc.com/news/world-europe-35620368': True, u'http://www.bbc.com/news/world-africa-35621426': True, u'http://www.bbc.com/news/world-europe-35616834': True, u'http://www.bbc.com/news/world-us-canada-35622395': True, u'http://www.bbc.com/news/world-africa-35620648': True, u'http://www.bbc.com/news/world-asia-35620649': True, u'http://www.bbc.com/news/world-africa-35620934': True, u'http://www.bbc.com/news/world-africa-35615720': True, u'http://www.bbc.com/news/world-us-canada-35610523': True, u'http://www.bbc.com/news/uk-england-cambridgeshire-35598578': True, u'http://www.bbc.com/news/world-europe-35617147': True, u'http://www.bbc.com/news/uk-politics-eu-referendum-35609968': True, u'http://www.bbc.com/news/world-asia-india-35620647': True, u'http://www.bbc.com/news/world-us-canada-35616011': True, u'http://www.bbc.com/news/technology-35611756': True, u'http://www.bbc.com/news/world-asia-china-35618395': True, u'http://www.bbc.com/news/world-us-canada-35617935': True, u'http://www.bbc.com/news/election-us-2016-35615331': True, u'http://www.bbc.com/news/world-europe-35611906': True, u'http://www.bbc.com/news/world-us-canada-35618386': True, u'http://www.bbc.com/news/uk-politics-35621079': True, u'http://www.bbc.com/news/world-us-canada-35617262': True, u'http://www.bbc.com/sport/cricket/35620560': True, u'http://www.bbc.com/news/world-europe-35618389': True, u'http://www.bbc.com/news/world-middle-east-35616267': True, u'http://www.bbc.com/news/world-europe-35616269': True, u'http://www.bbc.com/sport/cricket/35613141': True, u'http://www.bbc.com/news/world-africa-35610917': True, u'http://www.bbc.com/news/world-africa-35613085': True, u'http://www.bbc.com/news/world-asia-35610809': True}
+---------------------------------------------------
+http://tinyurl.com/hpf9x7c
+http://www.bbc.com/news/world-asia-35621942
+
+Kashmir militants surrounded by army 
+
+Getting qoute...
+Frequency Dic:
+{'excited': {'rw': ['move'], 'weight': 2}}
+
+Emotion List:
+['excited']
+
+Not enough emotions were mapped.
+Skipping article!!!!
+
+---------------------------------------------------
+{u'http://www.bbc.com/news/technology-35611763': True, u'http://www.bbc.com/sport/cricket/35613141': True, u'http://www.bbc.com/news/35618018': True, u'http://www.bbc.com/news/world-us-canada-35618386': True, u'http://www.bbc.com/news/world-europe-35620368': True, u'http://www.bbc.com/news/world-africa-35621426': True, u'http://www.bbc.com/news/world-europe-35616834': True, u'http://www.bbc.com/news/world-us-canada-35622395': True, u'http://www.bbc.com/news/world-africa-35620648': True, u'http://www.bbc.com/news/world-asia-35620649': True, u'http://www.bbc.com/news/world-europe-35617147': True, u'http://www.bbc.com/news/world-africa-35615720': True, u'http://www.bbc.com/news/world-us-canada-35610523': True, u'http://www.bbc.com/news/uk-england-cambridgeshire-35598578': True, u'http://www.bbc.com/news/world-africa-35620934': True, u'http://www.bbc.com/news/uk-politics-eu-referendum-35609968': True, u'http://www.bbc.com/news/world-asia-india-35620647': True, u'http://www.bbc.com/news/technology-35611756': True, u'http://www.bbc.com/news/world-asia-china-35618395': True, u'http://www.bbc.com/news/world-us-canada-35617935': True, u'http://www.bbc.com/news/election-us-2016-35615331': True, u'http://www.bbc.com/news/world-europe-35611906': True, u'http://www.bbc.com/news/world-asia-35621942': True, u'http://www.bbc.com/news/uk-politics-35621079': True, u'http://www.bbc.com/news/world-us-canada-35617262': True, u'http://www.bbc.com/sport/cricket/35620560': True, u'http://www.bbc.com/news/world-europe-35618389': True, u'http://www.bbc.com/news/world-middle-east-35616267': True, u'http://www.bbc.com/news/world-europe-35616269': True, u'http://www.bbc.com/news/world-us-canada-35616011': True, u'http://www.bbc.com/news/world-africa-35610917': True, u'http://www.bbc.com/news/world-africa-35613085': True, u'http://www.bbc.com/news/world-asia-35610809': True}
+---------------------------------------------------
+http://tinyurl.com/z7fdpsb
+http://www.bbc.com/newsbeat/35618067
+
+Singer Kesha must stick to Sony deal 
+
+Getting qoute...
+Frequency Dic:
+{'hurt': {'rw': ['harm'], 'weight': 2}}
+
+Emotion List:
+['hurt']
+
+Not enough emotions were mapped.
+Skipping article!!!!
+
+---------------------------------------------------

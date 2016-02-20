@@ -155,7 +155,7 @@ def main():
 	background = splashLayer(emotion_list,frequency,weight_dimensions,background,colors)
 	background = splashLayer(emotion_list,frequency,weight_dimensions,background,colors)
 	
-	background.show()
+#	background.show()
 	background.save("img/tweet.png")
 
 
