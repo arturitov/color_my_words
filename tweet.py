@@ -12,31 +12,30 @@ def main(tinyurl, title):
 	auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 	api = tweepy.API(auth)
 
-	# Get qoute to tweet
-	print "Getting qoute..."
-	qoute = qoutes.main()
+	# # Get qoute to tweet
+	# print "Getting qoute..."
+	# qoute = qoutes.main()
 
-	if len(qoute) > 0:
+	# if len(qoute) > 0:
+	# creates a picture to tweet based on article save in txt/article.txt
+	image.main()
 
-		print "Finding Image...\n"
-		# creates a picture to tweet based on article save in txt/article.txt
-		image.main()
+	picture = "img/tweet.png"
 
-		picture = "img/tweet.png"
+	text = title.encode('utf-8') + '...\n'  + tinyurl + ' '
 
-		text = title[0:20].encode('utf-8') + '...\n' + qoute + ' ' + tinyurl + ' '
+	print "Tweeting...\n"
 
-		print "Tweeting...\n"
-
-		try:
-			api.update_with_media(picture, text)
-			print "Success!!!!"
-			return True
-		except:
-			print "*******************************"
-			print "	Not tweeted"
-			print "*******************************"
-			return False
+	try:
+		api.update_with_media(picture, text)
+		print "Success!!!!"
+		return True
+	except Exception,e:
+		print e
+		print "*******************************"
+		print "	Not tweeted"
+		print "*******************************"
+		return False
 
 	return False
 

@@ -69,6 +69,10 @@ class AlchemyAPI:
     ENDPOINTS['sentiment']['url'] = '/url/URLGetTextSentiment'
     ENDPOINTS['sentiment']['text'] = '/text/TextGetTextSentiment'
     ENDPOINTS['sentiment']['html'] = '/html/HTMLGetTextSentiment'
+    ENDPOINTS['emotion'] = {}
+    ENDPOINTS['emotion']['url'] = '/url/URLGetTextEmotion'
+    ENDPOINTS['emotion']['text'] = '/text/TextGetTexEemotion'
+    ENDPOINTS['emotion']['html'] = '/html/HTMLGetTextEmotion'
     ENDPOINTS['sentiment_targeted'] = {}
     ENDPOINTS['sentiment_targeted']['url'] = '/url/URLGetTargetedSentiment'
     ENDPOINTS['sentiment_targeted']['text'] = '/text/TextGetTargetedSentiment'
@@ -288,6 +292,32 @@ class AlchemyAPI:
         # add the data to the options and analyze
         options[flavor] = data
         return self.__analyze(AlchemyAPI.ENDPOINTS['sentiment'][flavor], {}, options)
+
+    def emotion(self, flavor, data, options={}):
+        """
+        Calculates the sentiment for text, a URL or HTML.
+        For an overview, please refer to: http://www.alchemyapi.com/products/features/sentiment-analysis/
+        For the docs, please refer to: http://www.alchemyapi.com/api/sentiment-analysis/
+
+        INPUT:
+        flavor -> which version of the call, i.e. text, url or html.
+        data -> the data to analyze, either the text, the url or html code.
+        options -> various parameters that can be used to adjust how the API works, see below for more info on the available options.
+
+        Available Options:
+        showSourceText -> 0: disabled (default), 1: enabled
+
+        OUTPUT:
+        The response, already converted from JSON to a Python object. 
+        """
+
+        # Make sure this request supports this flavor
+        if flavor not in AlchemyAPI.ENDPOINTS['emotion']:
+            return {'status': 'ERROR', 'statusInfo': 'emotion analysis for ' + flavor + ' not available'}
+
+        # add the data to the options and analyze
+        options[flavor] = data
+        return self.__analyze(AlchemyAPI.ENDPOINTS['emotion'][flavor], {}, options)
 
     def sentiment_targeted(self, flavor, data, target, options={}):
         """
@@ -762,6 +792,18 @@ class AlchemyAPI:
         try:
             post_url = AlchemyAPI.BASE_URL + endpoint + \
                 '?' + urlencode(params).encode('utf-8')
+            # print(post_url)
+            # print(endpoint)
+            if endpoint  == '/text/TextGetTexEemotion':
+                post_url = 'http://gateway-a.watsonplatform.net/calls/text/TextGetEmotion' + \
+                '?' + urlencode(params).encode('utf-8')
+            # elif endpoint == '/url/TextGetEmotion':
+            #     post_url = 'http://gateway-a.watsonplatform.net/calls/url/TextGetEmotion' + \
+            #     '?' + urlencode(params).encode('utf-8')
+            # elif endpoint == '/html/TextGetEmotion':
+            #     post_url = 'http://gateway-a.watsonplatform.net/calls/html/TextGetEmotion' + \
+            #     '?' + urlencode(params).encode('utf-8')
+            # print(post_url)
         except TypeError:
             post_url = AlchemyAPI.BASE_URL + endpoint + '?' + urlencode(params)
 
