@@ -6,17 +6,19 @@ import string
 
 
 
-def main():
+def main(text):
 	alchemyapi = AlchemyAPI()
-
-	with open('txt/article.txt', 'r') as myfile:
-		data=myfile.read()
-
+	if text == 'news':
+		with open('txt/article.txt', 'r') as myfile:
+			data=myfile.read()
+	elif text == "lyrics":
+		with open('txt/lyrics.txt', 'r') as myfile:
+			data=myfile.read()
 	# with open('txt/article_test.txt', 'r') as myfile_test:
 	# 	data_test=myfile_test.read()
 
 	response = alchemyapi.emotion("text", data)
-	print response
+	# print response
 	# response_test =alchemyapi.emotion("text", data_test)
 	# print "Overall test"
 	# for e in response_test['docEmotions']:
@@ -39,7 +41,8 @@ def main():
 			continue
 
 		response = alchemyapi.emotion("text", s)
-
+		# test = response['docEmotions']
+		# print response
 		try:
 			test = response['docEmotions']
 			# print s 

@@ -112,6 +112,7 @@ def get_lyrics(url):
     # print paragraphs
     # print paragraphs
     text = "\n".join([ paragraph.text.encode('utf-8') for paragraph in paragraphs])
+    # print text
     fo.write(text)
     fo.close()
 
@@ -152,16 +153,16 @@ def main(text):
             elif text == "lyrics":
                 get_lyrics(url)
             # Produces qoute based on the article
-            success = tweet.main(tiny,title)
+            success = tweet.main(tiny,title,text)
 
             print "---------------------------------------------------"
             # Produces a delay until the next tweet
-            # sleep_delay = randint(600,1800)
+            sleep_delay = randint(600,1800)
             sleep_delay = 1
             if success:
                 print "Delay",sleep_delay,"seconds"
                 time.sleep(sleep_delay)
 
 if __name__ == '__main__':   
-    text = "lyrics"
+    text = sys.argv[1]
     main(text)

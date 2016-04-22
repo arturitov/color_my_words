@@ -1,9 +1,10 @@
 import tweepy, time, sys
 import image
+import get_emotion
 import qoutes_emotions2 as qoutes
 
 
-def main(tinyurl, title):
+def main(tinyurl, title,text):
 	CONSUMER_KEY = 'MusRk3CP2IVZ9ENFP0xcUnmZX'#keep the quotes, replace this with your consumer key
 	CONSUMER_SECRET = 'rOMBbYDP4SLXxQkfIr2BiiBWyZyjmgAo46X4SGTlxcFgo23UrU'#keep the quotes, replace this with your consumer secret key
 	ACCESS_KEY = '4926558947-Femq6iBwcWsl8f9Eaau7fPp17BIkMbWNfp8kNBu'#keep the quotes, replace this with your access token
@@ -17,8 +18,12 @@ def main(tinyurl, title):
 	# qoute = qoutes.main()
 
 	# if len(qoute) > 0:
+	
+	#finds top emotion
+	emotion_list = get_emotion.main(text)
+
 	# creates a picture to tweet based on article save in txt/article.txt
-	image.main()
+	image.main(emotion_list)
 
 	picture = "img/tweet.png"
 
@@ -42,4 +47,4 @@ def main(tinyurl, title):
 
 
 if __name__ == '__main__':
-	main('','')
+	main('','','')

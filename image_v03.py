@@ -7,8 +7,6 @@ from colour import Color
 import save_load_obj as slo
 import time
 import sys
-import get_emotion
-import sentiment
 import os
 
 
@@ -122,9 +120,9 @@ def splashLayer(emotion,background,colors):
 	return background
 
 
-def main():
-	emotion_list = get_emotion.main()
-	# emotion_list = ['joy','anger']
+def main(emotion_list):
+	# emotion_list = get_emotion.main()
+	# emotion_list = ['joy']
 	colors = dict()
 	colors['anger'] = list()
 	colors['joy'] = list()
@@ -155,11 +153,11 @@ def main():
 	# background.show()
 	# 
 	# background = splashLayer(['joy', 'fear'],background,colors)
-	background.show()
+	# background.show()
 
 	background.save("img/tweet.png")
 
 
 if __name__ == '__main__':   
-     main()
+     main(emotion_list)
 # 
