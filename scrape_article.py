@@ -4,7 +4,7 @@ import sys
 import qoutes_emotions2 as qoutes
 import tinyurl
 import time
-import tweet
+import tweet, tweet_lyrics
 import save_load_obj as slo
 from random import randint
 
@@ -150,15 +150,17 @@ def main(text):
             # Outputs contents of article into txt/article.txt
             if text == "news":
                 get_article_text(url)
+                success = tweet.main(tiny,title,text)
             elif text == "lyrics":
                 get_lyrics(url)
+                success = tweet_lyrics.main(tiny,title,text)
             # Produces qoute based on the article
-            success = tweet.main(tiny,title,text)
+            
 
             print "---------------------------------------------------"
             # Produces a delay until the next tweet
             sleep_delay = randint(600,1800)
-            sleep_delay = 1
+            # sleep_delay = 5
             if success:
                 print "Delay",sleep_delay,"seconds"
                 time.sleep(sleep_delay)

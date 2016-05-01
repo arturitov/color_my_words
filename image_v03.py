@@ -67,7 +67,7 @@ def splashLayer(emotion,background,colors):
 	# 	# 	ran.append(colors[e][randint(0,len(colors[e])-1)])
 	c = 0
 	for i in ran:
-		print c
+		# print c
 		c += 1
 		path = 'img/splatter/'
 		files = list()

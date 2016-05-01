@@ -20,10 +20,24 @@ def main(text):
 	response = alchemyapi.emotion("text", data)
 	# print response
 	# response_test =alchemyapi.emotion("text", data_test)
-	# print "Overall test"
-	# for e in response_test['docEmotions']:
-	# 	print e, response_test['docEmotions'][e]
 
+	emotion_list = list()
+	maxs = 0
+	print "Overall"
+	for e in response['docEmotions']:
+		print e, response['docEmotions'][e]
+		if float(response['docEmotions'][e]) > maxs:
+			maxs = float(response['docEmotions'][e])
+			max_emotion = e
+	emotion_list.append(max_emotion)
+	if not maxs >0.4:
+		maxs = 0
+		for e in response['docEmotions']:
+			# print e, response['docEmotions'][e]
+			if float(response['docEmotions'][e]) > maxs and float(response['docEmotions'][e]) < float(response['docEmotions'][emotion_list[0]]):
+				maxs = float(response['docEmotions'][e])
+				max_emotion = e
+		emotion_list.append(max_emotion)
 
 	exclude = set(['#', '"', '%' , '&', ')', '(', '+', '*', '-', ',', '/', '.', ';', ':', '=', '<', '>', '@', '[', ']', '\\', '_', '^', '`', '{', '}', '|', '~'])
 	sentence = data.split('\n')
@@ -31,91 +45,70 @@ def main(text):
 	emotions = dict()
 	emot_freq =  dict()
 	emot_freq_2 = dict()
+	sentences = dict()
 
-	for s in sentence:
-		# print s
-		s = ''.join(ch for ch in s if ch not in exclude)
-		print s
+	if text != "":
+		for s in sentence:
+			# print s
+			s = ''.join(ch for ch in s if ch not in exclude)
 
-		if len(s) < 10:
-			continue
+			# print s
 
-		response = alchemyapi.emotion("text", s)
-		# test = response['docEmotions']
-		# print response
-		try:
-			test = response['docEmotions']
-			# print s 
-			print response['docEmotions']
-		except Exception, e:
-			continue
-		max_emotion = max(response['docEmotions'].iteritems(), key=operator.itemgetter(1))[0]
-		print max_emotion
-
-		# if max_emotion not in emot_freq_2:
-		# 	emot_freq_2[max_emotion] = 0
-
-		# emot_freq_2[max_emotion] += 1
-
-		if float(response['docEmotions'][max_emotion]) >= 0.35:
-			# print max_emotion
-			if max_emotion not in emot_freq:
-				emot_freq[max_emotion] = 0
-			if str(max_emotion) == 'disgust' and float(response['docEmotions'][max_emotion]) < 0.5:
+			if len(s) < 10:
 				continue
-			emot_freq[max_emotion] += 1
-			if max_emotion == 'disgust':
-				print "------------->",s
 
-		# for emotion in response['docEmotions']:
-		# 	# if emotion not in emotions:
-		# 	# 	emotions[emotion] = 0.0
-		# 	# emotions[emotion] += float(response['docEmotions'][emotion])
-		# 	if float(response['docEmotions'][emotion]) > 0.4:
-		# 		if emotion not in emotions:
-		# 			emotions[emotion] = list()
-		# 		emotions[emotion].append(float(response['docEmotions'][emotion]))
-
-	# print
-
-	# for e in emot_freq:
-	#      print e, emot_freq[e]
-
-	# print
+			if s in sentences:
+				# print "found"
+				response = sentences[s]
+			else:
+				response = alchemyapi.emotion("text", s)
+			try:
+				# print response['docEmotions']
+				max_emotion = max(response['docEmotions'].iteritems(), key=operator.itemgetter(1))[0]
+			except Exception, e:
+				continue
+			
+			# print max_emotion
 
 
-	for e in emot_freq:
-	     print e,emot_freq[e]
-	print
-	emot_freq_3 = copy.deepcopy(emot_freq)
-	emotion_list = list()
-	max_emotion = max(emot_freq.iteritems(), key=operator.itemgetter(1))[0]
-	emotion_list.append(str(max_emotion))
-	emot_freq[max_emotion] = 0
-	max_emotion = max(emot_freq.iteritems(), key=operator.itemgetter(1))[0]
-	emotion_list.append(str(max_emotion))
+			if max_emotion not in emot_freq:
+					emot_freq_2[max_emotion] = 0
+			emot_freq_2[max_emotion] += 1
 
-	if emot_freq_3[emotion_list[0]] > 2*emot_freq_3[emotion_list[1]] :
-		emotion_list = emotion_list[0:1]
+			if float(response['docEmotions'][max_emotion]) >= 0.35:
+				# print max_emotion
+				if max_emotion not in emot_freq:
+					emot_freq[max_emotion] = 0
+				if str(max_emotion) == 'disgust' and float(response['docEmotions'][max_emotion]) < 0.5:
+					continue
+				emot_freq[max_emotion] += 1
+				# if max_emotion == 'disgust':
+				# 	print "------------->",s
+
+			sentences[s] = response
+
+
+		for e in emot_freq:
+		     print e,emot_freq[e]
+		print
+		print "----test------"
+		for e in emot_freq_2:
+		     print e,emot_freq_2[e]
+		print "----test------"
+
+		emot_freq_3 = copy.deepcopy(emot_freq)
+		emotion_list = list()
+		max_emotion = max(emot_freq.iteritems(), key=operator.itemgetter(1))[0]
+		emotion_list.append(str(max_emotion))
+		emot_freq[max_emotion] = 0
+		max_emotion = max(emot_freq.iteritems(), key=operator.itemgetter(1))[0]
+		emotion_list.append(str(max_emotion))
+
+		if emot_freq_3[emotion_list[0]] >= 2*emot_freq_3[emotion_list[1]] :
+			emotion_list = emotion_list[0:1]
+
 
 	print emotion_list
-
-
-	# for e in emot_freq_2:
-	#      print e,emot_freq_2[e]
-	# print
-	# emot_freq_4 = copy.deepcopy(emot_freq_2)
-	# emotion_list = list()
-	# max_emotion = max(emot_freq_2.iteritems(), key=operator.itemgetter(1))[0]
-	# emotion_list.append(str(max_emotion))
-	# emot_freq_2[max_emotion] = 0
-	# max_emotion = max(emot_freq_2.iteritems(), key=operator.itemgetter(1))[0]
-	# emotion_list.append(str(max_emotion))
-
-	# if emot_freq_4[emotion_list[0]] > 2*emot_freq_4[emotion_list[1]] :
-	# 	emotion_list = emotion_list[0:1]
-
-	# print emotion_list
 
 	if emotion_list[0] == 'joy' and 'disgust' in emotion_list:
 		emotion_list = ['joy']	
