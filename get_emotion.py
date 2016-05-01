@@ -87,7 +87,7 @@ def main(text):
 
 			sentences[s] = response
 
-
+		print "-------------"
 		for e in emot_freq:
 		     print e,emot_freq[e]
 		print
@@ -98,11 +98,16 @@ def main(text):
 
 		emot_freq_3 = copy.deepcopy(emot_freq)
 		emotion_list = list()
+		print emotion_list
+
 		max_emotion = max(emot_freq.iteritems(), key=operator.itemgetter(1))[0]
 		emotion_list.append(str(max_emotion))
+		print emotion_list
+		
 		emot_freq[max_emotion] = 0
 		max_emotion = max(emot_freq.iteritems(), key=operator.itemgetter(1))[0]
 		emotion_list.append(str(max_emotion))
+		print emotion_list
 
 		if emot_freq_3[emotion_list[0]] >= 2*emot_freq_3[emotion_list[1]] :
 			emotion_list = emotion_list[0:1]

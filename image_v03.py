@@ -91,7 +91,7 @@ def splashLayer(emotion,background,colors):
 		background.paste(img, ( off_x , off_y),mask=img)
 	x = x / 2
 	try:
-		for x in xrange(0,4):
+		for x in xrange(0,5):
 			if randint(0,1):
 				print x
 				path = "img/"+emotion[0]+'/'
@@ -100,13 +100,14 @@ def splashLayer(emotion,background,colors):
 					if i.endswith('.png'):
 						images.append(path+i)
 				image = images[randint(0,len(images)-1)]
-				if randint(0,1):
-					img = createSplash((0,0,0,250),image)
-				else:
-					img = createSplash((250,250,250,250),image)
+				# if randint(0,1):
+				# 	img = createSplash((0,0,0,250),image)
+				# else:
+				# 	img = createSplash((250,250,250,250),image)
 				# if randint(0,1):
 				# 	rotate = 45
 				# 	img = img.rotate(rotate)
+				img = createSplash(colors[emotion[0]][randint(0,len(colors[emotion[0]])-1)],image)
 				try:
 					off_x = (randint(-(img.size[0]/4) ,background.size[0]-(img.size[0]/4)))
 					off_y = (randint(-(img.size[0]/4) ,background.size[1]-(img.size[1]/4)))
