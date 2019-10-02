@@ -11,7 +11,7 @@ It also produces a quote that contains the most frequent word mapped or one of i
 
 ## Technical
 ### How To Run:
-Since the markov chain and the rel_words dictionary is already made all we need to do to compose our tweets is
+Since the markov chain and the rel_words dictionary are already made all we need to do to compose our tweets is
 	
 	bash run.bash
 
